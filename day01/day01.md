@@ -1,13 +1,14 @@
 <!--
  * @Author: chengsn
  * @Date: 2021-05-28 16:54:30
- * @LastEditTime: 2021-06-29 23:17:22
+ * @LastEditTime: 2021-07-22 16:48:24
  * @LastEditors: chengsn
  * @Description: This is  just a test for C language.
- * @FilePath: \undefinedf:\30DayMakeOS\day01\day01.md
+ * @FilePath: \day01\day01.md
  * 可以输入预定的版权声明、个性签名、空行等
 -->
-## 30天自制操作系统笔记--Day01
+
+## 30 天自制操作系统笔记--Day01
 
 ### 安装虚拟环境
 
@@ -42,7 +43,7 @@ wsl --set-default-version 2
 ### 操作系统内存分布图
 
 ![memoryMap](memoryMap.png)
-从上图可以看出，操作系统的启动区起点是从0x07C00开始的，从而在写操作系统时，使用语句
+从上图可以看出，操作系统的启动区起点是从 0x07C00 开始的，从而在写操作系统时，使用语句
 
 ```bash
 ORG 0x7c00
@@ -50,3 +51,5 @@ ORG 0x7c00
 
 作为开头。这是告诉操作系统，从这个地址开始将程序装载到内存中的这个地址。
 暂时先记录这些，抽时间慢慢学习并做好笔记。写一个操作系统出来。
+
+鉴于 Windows 的 WSL2 图形界面比较捞，最近整了个树莓派，于是在树莓派上安装了 Manjaro 系统，有一说一，这个系统的图形化处理确实非常不错。于是在做了一些配置之后，手动从源码安装了 qemu-6.0.0.
