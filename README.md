@@ -7,7 +7,7 @@
 
 ### 环境配置：
 
-编译环境：Ubuntu18.04
+编译环境：Ubuntu20.04
 
 IDE：VS Code
 
